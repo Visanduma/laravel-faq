@@ -1,0 +1,24 @@
+{
+    "name": "visanduma/laravel-faq",
+    "description": "Simple package to manage FAQ",
+    "autoload": {
+        "psr-4": {
+            "Visanduma\\LaravelFaq\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LaHiRu",
+            "email": "lahirulhr@gmail.com"
+        }
+    ],
+    "minimum-stability" : "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Visanduma\\LaravelFaq\\FaqServiceProvider"
+            ]
+        }
+    }
+}
