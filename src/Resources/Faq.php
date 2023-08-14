@@ -54,7 +54,6 @@ class Faq extends NovaResource
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Title'),
             Markdown::make('Content'),
-            Number::make('Order'),
             BelongsTo::make('Category','category', FaqCategory::class)
         ];
     }
