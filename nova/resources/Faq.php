@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova;
+namespace Visanduma\LaravelFaq\Nova\Resources;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
@@ -9,8 +9,9 @@ use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Resource as NovaResource;
 
-class Faq extends Resource
+class Faq extends NovaResource
 {
     /**
      * The model the resource corresponds to.
