@@ -3,8 +3,7 @@
     "description": "Simple package to manage FAQ",
     "autoload": {
         "psr-4": {
-            "Visanduma\\LaravelFaq\\": "src/",
-            "Visanduma\\LaravelFaq\\Nova\\": "nova/"
+            "Visanduma\\LaravelFaq\\": "src/"
         }
     },
     "authors": [
