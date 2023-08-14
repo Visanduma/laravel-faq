@@ -4,7 +4,7 @@
     "autoload": {
         "psr-4": {
             "Visanduma\\LaravelFaq\\": "src/",
-            "Visanduma\\LaravelFaq\\Nova\\Resources": "src/nova/resources"
+            "Visanduma\\LaravelFaq\\Nova\\": "nova/"
         }
     },
     "authors": [
