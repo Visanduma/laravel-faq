@@ -47,7 +47,7 @@ class FaqCategory extends NovaResource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make('Name'),
+            Text::make('Name')->rules('required'),
             Text::make('Slug')->hideWhenCreating(),
             Text::make('No. of Faqs', function () {
                 return $this->model()->faqs()->count();
