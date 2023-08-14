@@ -10,9 +10,12 @@ use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Resource as NovaResource;
+use Outl1ne\NovaSortable\Traits\HasSortableRows;
 
 class Faq extends NovaResource
 {
+    use HasSortableRows;
+    
     /**
      * The model the resource corresponds to.
      *

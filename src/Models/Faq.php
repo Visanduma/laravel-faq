@@ -3,11 +3,23 @@
 namespace Visanduma\LaravelFaq\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\EloquentSortable\Sortable;
+use Spatie\EloquentSortable\SortableTrait;
 
-class Faq extends Model
+
+class Faq extends Model implements Sortable
 {
+    use SortableTrait;
+
+
     protected $table = 'laravel_faqs';
     protected $guarded = [];
+
+
+    public $sortable = [
+        'order_column_name' => 'order',
+        'sort_when_creating' => true,
+    ];
 
     public function category()
     {
