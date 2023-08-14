@@ -1,6 +1,6 @@
 <?php
 
-namespace Visanduma\LaravelFaq\Nova\Resources;
+namespace Visanduma\LaravelFaq\Resources;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
